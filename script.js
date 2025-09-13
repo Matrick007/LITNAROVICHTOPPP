@@ -81,7 +81,7 @@ document.querySelectorAll('.menu-item').forEach(item => {
         playSound(clickSound);
         const info = item.getAttribute('data-info');
         infoText.textContent = info === 'about' 
-            ? 'Разработчик - Литнарович. Ведущие - Литнарович и Лукин!'
+            ? 'Вы крассавы'
             : 'Выберите одного номинанта в каждой категории и отправьте голос!';
         infoPanel.style.display = 'flex';
         menu.style.display = 'none';
@@ -198,4 +198,5 @@ tg.MainButton.show();
 tg.MainButton.onClick(() => {
     playSound(clickSound);
     tg.close();
+
 });
